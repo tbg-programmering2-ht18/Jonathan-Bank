@@ -37,7 +37,7 @@ namespace Bank
                     Console.WriteLine("ERROR" + e.Message);
                     Console.ReadKey();
                     answer = 0;
-                    Console.Clear()
+                    Console.Clear();
                 }
 
                 switch (answer)
