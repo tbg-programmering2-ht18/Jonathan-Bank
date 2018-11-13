@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.IO;
 namespace Bank
 {
     class Program
@@ -19,14 +19,13 @@ namespace Bank
             Console.WriteLine("Wäcom to Bänk");
 
             Console.WriteLine("");
-            while (answer != 4) //If the answer isn't for the code wil perpetually loop, if, however the answer is 4 the code will terminate.
+            while (answer != 4) //If the answer isn't 4 the code will perpetually loop, if, however the answer is 4 the code will terminate.
             {
                 Console.WriteLine("1 : Add customer");
                 Console.WriteLine("2 : Deleeeeet");
                 Console.WriteLine("3 : Show all Bois");
                 Console.WriteLine("4 : leave");
                 Console.WriteLine("");
-                answer = Console.ReadLine();
                 try
                 {
                     answer = int.Parse(Console.ReadLine());
@@ -40,7 +39,7 @@ namespace Bank
                     Console.Clear();
                 }
 
-                switch (answer)
+                switch (answer) //the following are the different scenarios which can play out depending on your answer
                 {
                     case 1:
                         Console.Clear();
