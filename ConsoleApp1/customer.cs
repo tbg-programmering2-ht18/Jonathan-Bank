@@ -12,10 +12,10 @@ namespace Bank
         public int balance { get; set; }
 
 
-        public void showCustomer()
+        public void ShowCustomer()
         {
             Console.WriteLine(name);
-            
+
         }
 
     }

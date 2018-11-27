@@ -44,7 +44,7 @@ namespace Bank
                     case 1:
                         Console.Clear();
                         Console.WriteLine("Add customer");
-                        addCustomer();
+                        AddCustomer();
                         Console.Clear();
                         break;
                     case 2:
@@ -83,16 +83,17 @@ namespace Bank
             Console.ReadKey();
 
         }
+        //
 
         private static void ShowAllCustomer()
         {
             foreach (var customer in customerbalance)
             {
-                customer.showCustomer();
+                customer.ShowCustomer();
             }
         }
 
-        public static void addCustomer()
+        public static void AddCustomer()
         {
             Console.WriteLine("");
             Console.Write("Name of customer: ");
